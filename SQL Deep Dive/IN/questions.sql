@@ -5,6 +5,7 @@
 */
 
 SELECT * FROM orders;
+where Store in (7888, 1082, 12808, 9623)
 
 
 /*
@@ -14,3 +15,4 @@ SELECT * FROM orders;
 */
 
 SELECT * FROM city;
+where world in (Zuid-Holland, Noord-Brabant, Utrecht)
