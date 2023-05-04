@@ -11,10 +11,11 @@ SELECT ..., EXTRACT (YEAR FROM AGE(birth_date)) as "age" FROM employees;
 /*
 * DB: Employees
 * Table: employees
-* Question: How many people's name start with A and end with R?
+* Question: How many people's name start with A and end with R
 * Expected output: 1846
 */
-
+SELECT * From employees
+where first_name LIKE'A%r'
                                                   
 /*
 * DB: Store
@@ -22,7 +23,8 @@ SELECT ..., EXTRACT (YEAR FROM AGE(birth_date)) as "age" FROM employees;
 * Question: How many people's zipcode have a 2 in it?.
 * Expected output: 4211 
 */
-
+SELECT * From customers
+where zip LIKE '%2%'
 
 
 /*
